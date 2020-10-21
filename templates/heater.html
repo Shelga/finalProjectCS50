@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+Heater
+
+{% endblock %}
+
+{% block main %}
+
+<div>Hello</div>
+
+<div>
+    <div>Yesterday {{ heater_yesterday_value }}</div> 
+</div>
+
+<form action="/heater" method="post">
+
+    <div>Today</div>
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="heater" placeholder="Count" type="text">
+    </div>
+    
+    <button class="btn btn-primary " type="submit">Send</button>
+
+
+</form>
+
+
+{% endblock %}

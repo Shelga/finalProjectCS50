@@ -1,0 +1,131 @@
+<html> 
+<body> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- <div width="auto" height="100%">
+      <canvas id="myChart1"></canvas>
+  </div>
+  <div width="auto" height="100%">
+    <canvas id="myChart2"></canvas>
+</div> -->
+<div width="auto" height="100%">
+  <canvas id="myChart3"></canvas>
+</div>
+  <script> 
+
+    //     // Vertical bar chart
+    // var ctx = document.getElementById('myChart1').getContext('2d');
+    // var myChart1 = new Chart(ctx, {
+    //     type: 'line',
+    //     data: {
+    //         labels: ['01.10', '02.10', '03.10', '04.10', '05.10', '06.10', '7.10', '8.10', '9.10', '10.10', '11.10', '12.10', '13.10', '14.10', '15.10', '16.10', '17.10', '18.10', '19.10', '20.10', '21.10', '22.10', '23.10', '24.10', '25.10', '26.10', '27.10', '28.10', '29.10', '30.10', '31.10'],
+    //         datasets: [{
+    //             label: 'Life expectancy',
+    //             data: [3, 4, 1, 0.5, 3, 2, 3, 4, 1, 5, 3, 2, 0.3, 4, 1, 5, 3, 2, 3, 4, 1, 5, 3, 2, 5, 3, 2, 3, 4, 1, 5],
+    //             backgroundColor: 'rgba(216, 27, 96, 0.6)',
+    //             borderColor: 'rgba(216, 27, 96, 1)',
+
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         responsive: false,
+    //         legend: {
+    //             display: false
+    //         },
+    //         title: {
+    //             display: true,
+    //             text: 'Water',
+    //             position: 'top',
+    //             fontSize: 10,
+    //             padding: 10
+    //         },
+    //         scales: {
+    //             yAxes: [{
+    //                 ticks: {
+    //                     min: 0.1
+    //                 }
+    //             }]
+    //         }
+    //     }
+    // });
+
+        // Vertical bar chart
+        var ctx = document.getElementById('myChart3').getContext('2d');
+    var myChart3 = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labes: true_date_light,
+            datasets: [{
+                label: 'Life expectancy',
+                data: true_arr_light,
+                backgroundColor: 'rgba(16, 27, 96, 0.6)',
+                borderColor: 'rgba(16, 27, 96, 1)',
+
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: false,
+            maintainAspectRatio: false,
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: 'Heater',
+                position: 'top',
+                fontSize: 10,
+                padding: 10
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0.1
+                    }
+                }]
+            }
+        }
+    });
+
+    //     // Vertical bar chart
+    //     var ctx = document.getElementById('myChart2').getContext('2d');
+    // var myChart2 = new Chart(ctx, {
+    //     type: 'line',
+    //     data: {
+    //         labels: ['01.10', '02.10', '03.10', '04.10', '05.10', '06.10', '7.10', '8.10', '9.10', '10.10', '11.10', '12.10', '13.10', '14.10', '15.10', '16.10', '17.10', '18.10', '19.10', '20.10', '21.10', '22.10', '23.10', '24.10', '25.10', '26.10', '27.10', '28.10', '29.10', '30.10', '31.10'],
+    //         datasets: [{
+    //             label: 'Life expectancy',
+    //             data: [3, 4, 1, 0.5, 3, 2, 3, 4, 1, 5, 3, 2, 0.3, 4, 1, 5, 3, 2, 3, 4, 1, 5, 3, 2, 5, 3, 2, 3, 4, 1, 5],
+    //             backgroundColor: 'rgba(116, 27, 96, 0.6)',
+    //             borderColor: 'rgba(116, 27, 96, 1)',
+
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         responsive: false,
+    //         legend: {
+    //             display: false
+    //         },
+    //         title: {
+    //             display: true,
+    //             text: 'Light',
+    //             position: 'top',
+    //             fontSize: 10,
+    //             padding: 10
+    //         },
+    //         scales: {
+    //             yAxes: [{
+    //                 ticks: {
+    //                     min: 0.1
+    //                 }
+    //             }]
+    //         }
+    //     }
+    // });
+    
+  </script> 
+
+</body> 
+</html>
